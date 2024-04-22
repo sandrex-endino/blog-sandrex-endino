@@ -1,4 +1,29 @@
 ---
-const pageTitle = "About"
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const pageTitle = "About";
 ---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="about-page">
+    <div class="about-page-content">
+      <h1>About</h1>
+      <img src="../../public/headshot.jpg" />
+      <p>Hi! I am Sandrex Cayle Endino, an aspiring fullstack developer.</p>
+      <p>
+        I have a degree in Electronics and Communications Engineering and I am
+        currently working as an Associate in Technology Consulting service line
+        of SGV & Co. in Makati, Ph.
+      </p>
+      <p>
+        I am a <em>caffeine-consumer/any-kind-of-music-enjoyer/swabelicious</em>
+        guy from Taguig who happens to have access to the internet.
+      </p>
+      <p>
+        This site is built upon Astro web-framework and serves as both a playground for refining my webdev skills
+        (hehehehe) and as my virtual diary.
+      </p>
+      <p>Maybe I'll write about the things that I like here, who knows?</p>
+    </div>
+  </div>
+</BaseLayout>

@@ -6,11 +6,102 @@ html {
 body {
     margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
+    /* max-width: 80ch; */
+    padding: 1rem 5rem;
     line-height: 1.5;
 }
 
 * {
     box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav styles */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 50px;
+    width: 100%;
+    top: 5rem;
+    padding: 10px 30px;
+}
+
+.nav-links a {
+    font-size: 22px;
+}
+
+.nav-links a:hover {
+    text-decoration: line-through;
+}
+
+/* home page styles */
+.home-page {
+    padding: 10%;
+}
+
+.home-page h1 {
+    font-size: 10rem;
+}
+
+.home-page p {
+    font-size: 18px;
+}
+
+.home-page-links {
+    margin-top: 100px;
+    font-size: 16px;
+}
+
+/* about page styles */
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page-content {
+    max-width: 100ch;
+}
+
+.about-page-content img {
+    height: 300px;
+
+    margin-bottom: 30px;
+}
+
+.about-page-content p {
+    font-size: 14px;
+}
+
+/* blog page styles */
+
+
+/* media queries for responsive design */
+@media screen and (max-width: 636px) {
+    .home-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-page h1 {
+        font-size: 5rem;
+    }
+
+    .home-page p {
+        font-size: 14px;
+    }
+
+    .home-page-links {
+        margin-top: 50px;
+        font-size: 13px;
+    }
 }
