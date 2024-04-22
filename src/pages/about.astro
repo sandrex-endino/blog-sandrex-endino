@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import myImg from '../assets/headshot.jpg'
+
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About";
@@ -8,7 +11,7 @@ const pageTitle = "About";
   <div class="about-page">
     <div class="about-page-content">
       <h1>About</h1>
-      <img src="/src/assets/headshot.jpg">
+      <Image class="my-image" src={myImg} alt="my image"/>
       <p>Hi! I am Sandrex Cayle Endino, an aspiring fullstack developer.</p>
       <p>
         I have a degree in Electronics and Communications Engineering and I am

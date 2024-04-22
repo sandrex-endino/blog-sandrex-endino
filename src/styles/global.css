@@ -72,8 +72,9 @@ a {
     max-width: 100ch;
 }
 
-.about-page-content img {
+.about-page-content .my-image  {
     height: 300px;
+    width: auto;
 
     margin-bottom: 30px;
 }
