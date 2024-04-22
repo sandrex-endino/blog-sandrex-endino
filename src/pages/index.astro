@@ -1,9 +1,32 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "Home"
+import Social from "../components/Social.astro";
+
+const pageTitle = "Home";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h1>Hello</h1>
+  <div class="home-page">
+    <h1>Hello there!</h1>
+    <p>
+      Welcome to my online diary.
+    </p>
+    <p>
+      I'm Sandrex, a caffeine-consumer/any-kind-of-music-enjoyer/swabelicious
+      guy who happens to have access to the internet.
+    </p>
+    <p>
+      Enjoy reading my nonsense.
+    </p>
+
+    <div class="home-page-links">
+      <!-- <span> Connect with me: </span> -->
+      <Social platform="github" username="sandrex-endino" />
+      //
+      <Social platform="linkedin" username="in/sandrex-endino" />
+      //
+      <Social platform="twitter" username="sandrex53" />
+    </div>
+  </div>
 </BaseLayout>
